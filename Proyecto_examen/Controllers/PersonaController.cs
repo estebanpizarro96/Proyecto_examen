@@ -56,7 +56,6 @@ namespace Proyecto_examen.Controllers
             if (dbpersona is null)
                 return NotFound("Persona no encontrada");
 
-
             dbpersona.RutPersona = updatePersona.RutPersona;
             dbpersona.PrimerNombre = updatePersona.PrimerNombre;
             dbpersona.PrimerApellido = updatePersona.PrimerApellido;
@@ -64,10 +63,7 @@ namespace Proyecto_examen.Controllers
             dbpersona.DireccionPersona = updatePersona.DireccionPersona;
             dbpersona.TelefonoPersona = updatePersona.TelefonoPersona;
             dbpersona.CorreoPersona = updatePersona.CorreoPersona;
-            
-
-
-
+        
             return Ok(await _dbContext.Personas.ToListAsync());
         }
     }

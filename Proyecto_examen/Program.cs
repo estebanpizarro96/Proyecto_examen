@@ -6,7 +6,6 @@ using System.Data.Common;
 using System.Reflection;
 using System.Threading.Tasks;
 
-
 var builder = WebApplication.CreateBuilder(args); // Add services to the container.
 
 builder.Services.AddControllers(); // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -16,7 +15,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<DatabaseDbContext>(options =>
 {
-    options.UseSqlite(builder.Configuration.GetConnectionString("V"));
+    options.UseSqlite(builder.Configuration.GetConnectionString("Data Source=.\\Data\\SQlLiteDatabase.db"));
 });
 
 var app = builder.Build(); // Configure the HTTP request pipeline.
@@ -48,7 +47,7 @@ namespace Proyecto_test.Models
 {
     class GestionPersonas
     {
-        static async Task Main(String[] args)
+        private static async Task Main(String[] args)
         {
             using (var db = new DatabaseDbContext())
             {
