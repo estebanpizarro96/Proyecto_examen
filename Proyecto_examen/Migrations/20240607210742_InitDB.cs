@@ -14,7 +14,7 @@ namespace Proyecto_examen.Migrations
                 name: "Personas",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "INTEGER", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     RutPersona = table.Column<string>(type: "TEXT", nullable: false),
                     PrimerNombre = table.Column<string>(type: "TEXT", nullable: false),
@@ -26,7 +26,7 @@ namespace Proyecto_examen.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Personas", x => x.ID);
+                    table.PrimaryKey("PK_Personas", x => x.Id);
                 });
         }
 

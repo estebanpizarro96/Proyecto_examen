@@ -10,7 +10,7 @@ using Proyecto_Prueba.Context;
 namespace Proyecto_examen.Migrations
 {
     [DbContext(typeof(DatabaseDbContext))]
-    [Migration("20240607173032_InitDB")]
+    [Migration("20240607210742_InitDB")]
     partial class InitDB
     {
         /// <inheritdoc />
@@ -21,7 +21,7 @@ namespace Proyecto_examen.Migrations
 
             modelBuilder.Entity("Proyecto_examen.Models.Persona", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -50,7 +50,7 @@ namespace Proyecto_examen.Migrations
                     b.Property<string>("TelefonoPersona")
                         .HasColumnType("TEXT");
 
-                    b.HasKey("ID");
+                    b.HasKey("Id");
 
                     b.ToTable("Personas", (string)null);
                 });

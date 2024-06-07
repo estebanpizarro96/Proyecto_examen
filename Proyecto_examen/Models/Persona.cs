@@ -8,14 +8,14 @@ namespace Proyecto_examen.Models
 {
     public class Persona //Modelo base de datos 
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string RutPersona { get; set; }
-        public string PrimerNombre { get; set; }
-        public string PrimerApellido { get; set; }
-        public string SegundoApellido { get; set; }
-        public string? DireccionPersona { get; set; }
-        public string? TelefonoPersona { get; set; }
-        public string? CorreoPersona { get; set; }
+        public string PrimerNombre { get; set; } = string.Empty;
+        public string PrimerApellido { get; set; } = string.Empty;
+        public string SegundoApellido { get; set; } = string.Empty;
+        public string? DireccionPersona { get; set; } = string.Empty;
+        public string? TelefonoPersona { get; set; } = string.Empty;
+        public string? CorreoPersona { get; set; } = string.Empty;
     }
 
 }

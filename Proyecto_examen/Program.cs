@@ -16,10 +16,11 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<DatabaseDbContext>(options =>
 {
-    options.UseSqlite(builder.Configuration.GetConnectionString(""));
+    options.UseSqlite(builder.Configuration.GetConnectionString("V"));
 });
 
 var app = builder.Build(); // Configure the HTTP request pipeline.
+
 
 
 /*
@@ -47,8 +48,6 @@ namespace Proyecto_test.Models
 {
     class GestionPersonas
     {
-
-
         static async Task Main(String[] args)
         {
             using (var db = new DatabaseDbContext())
