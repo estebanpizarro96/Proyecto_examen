@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Proyecto_examen.Models; //exportacion de otro namespace
+using Proyecto_examen.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
