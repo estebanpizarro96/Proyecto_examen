@@ -362,3 +362,5 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /Proyecto_examen
+/Proyecto_examen/Models/Persona.cs
+/Proyecto_examen/Controllers/PersonaController.cs
