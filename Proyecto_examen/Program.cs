@@ -47,7 +47,8 @@ namespace Proyecto_test.Models
 {
     class GestionPersonas
     {
-        private static async Task Main(String[] args)
+
+        static async Task Main(String[] args)
         {
             using (var db = new DatabaseDbContext())
             {
