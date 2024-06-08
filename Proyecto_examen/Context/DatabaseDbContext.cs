@@ -32,7 +32,7 @@ namespace Proyecto_Prueba.Context
             modelBuilder.Entity<Persona>().ToTable("Personas"); //create table
             modelBuilder.Entity<Persona>(entity => //identificar como quiero que se llame / expresiones lambda / alter table
             {
-                entity.HasKey(e => e.Id); //la clase persona tendrá una ID - //lambda es una función privada que te permite acceder al objeto o a la funcion
+                entity.HasKey(e => e.RutPersona); //la clase persona tendrá una ID - //lambda es una función privada que te permite acceder al objeto o a la funcion
             });
 
             base.OnModelCreating(modelBuilder);
