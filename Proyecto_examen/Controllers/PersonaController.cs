@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Proyecto_examen.Models;
-using Proyecto_Prueba.Context;
+using Proyecto_examen.Context;
 
 namespace Proyecto_examen.Controllers
 {
@@ -55,7 +55,7 @@ namespace Proyecto_examen.Controllers
                 SegundoApellido = personaPost.SegundoApellidoDTO,
                 DireccionPersona = personaPost.DireccionPersonaDTO,
                 TelefonoPersona = personaPost.TelefonoPersonaDTO,
-                CorreoPersona = personaPost.CorreoPersona,
+                CorreoPersona = personaPost.CorreoPersonaDTO,
 
             };
 
