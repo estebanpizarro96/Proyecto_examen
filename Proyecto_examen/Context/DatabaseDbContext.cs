@@ -7,7 +7,7 @@ using System.Reflection; //clase dentro de system para ser leidos ej: nombre de 
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Proyecto_Prueba.Context
+namespace Proyecto_examen.Context
 {
 
     public class DatabaseDbContext : DbContext //Contexto de la base de datos
